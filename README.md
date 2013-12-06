@@ -1,7 +1,9 @@
 
-Template Applications for Lift 3.0
+Lift 3.0 with AngularJS
 =======
-#Lift version 3.0-SNAPSHOT templates
 
-This repository contains templates for Lift projects, it's a fork of
-https://github.com/lift/lift_26_sbt, see the original for instructions on how to use.
+
+It's being created while I'm reading an AngularJS book.
+
+Initially I will use REST for the back end, when I finish the book, I will 
+add the same examples using the new Lift 3.0 feature: roudtrip. 
