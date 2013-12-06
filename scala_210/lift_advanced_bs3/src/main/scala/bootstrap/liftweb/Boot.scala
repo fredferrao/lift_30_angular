@@ -76,7 +76,7 @@ class Boot {
           case _ => Empty
         }
      }
-    ) 
+    )
     
     // Make a transaction span the whole HTTP request
     S.addAround(DB.buildLoanWrapper)
@@ -88,7 +88,7 @@ class Boot {
     val ddLabel1   = Menu.i("UserDDLabel") / "ddlabel1"
     val home       = Menu.i("Home") / "index" 
     val userMenu   = User.AddUserMenusHere
-    val static     = Menu(Loc("Static", Link(List("static"), true, "/static/index"), S.loc("StaticContent" , scala.xml.Text("Static Content")),LocGroup("lg2","topRight")))
+    val static     = Menu(Loc("Static", Link(List("static"),  true, "/static/index"), S.loc("StaticContent" , scala.xml.Text("Static Content")),LocGroup("lg2","topRight")))
     val twbs       = Menu(Loc("Bootstrap3", Link(List("bootstrap301"), true, "/bootstrap301/index"), S.loc("Bootstrap3" , scala.xml.Text("Bootstrap3")),LocGroup("lg2")))
      
     def sitemap = SiteMap(

@@ -1,10 +1,10 @@
-name := "Lift 2.6 starter template"
+name := "Lift 3.0 starter template"
 
 version := "0.0.3"
 
 organization := "net.liftweb"
 
-scalaVersion := "2.10.0"
+scalaVersion := "2.10.3"
 
 resolvers ++= Seq("snapshots"     at "http://oss.sonatype.org/content/repositories/snapshots",
                 "releases"        at "http://oss.sonatype.org/content/repositories/releases"
@@ -17,7 +17,7 @@ unmanagedResourceDirectories in Test <+= (baseDirectory) { _ / "src/main/webapp"
 scalacOptions ++= Seq("-deprecation", "-unchecked")
 
 libraryDependencies ++= {
-  val liftVersion = "2.6-M2"
+  val liftVersion = "3.0-SNAPSHOT"
   Seq(
     "net.liftweb"       %% "lift-webkit"        % liftVersion        % "compile",
     "net.liftmodules"   %% "lift-jquery-module_2.6" % "2.5",
